@@ -7,27 +7,61 @@
 //
 
 import XCTest
+import RxTest
+import RxSwift
 
+@testable import FindMyDriver
 class FindMyDriverViewModel_Test: XCTestCase {
+    var scheduler: TestScheduler!
+    var disposeBag: DisposeBag!
+    var apiFetcher: ApiMock!
+    var viewModel: FindMyDriverViewModel!
 
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        self.scheduler = TestScheduler(initialClock: 0)
+        self.disposeBag = DisposeBag()
+        self.apiFetcher = ApiMock()
+        self.viewModel = FindMyDriverViewModel()
     }
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testFullName() {
+        guard let sut = self.viewModel else { return }
+        let testString = scheduler.createObserver(String.self)
+        sut.fullName.asDriver(onErrorJustReturn: "error").drive(testString).disposed(by: self.disposeBag)
+    }
+    
+    
+    func testDate() {
+        guard let sut = self.viewModel else { return }
+
+        let dateObs = scheduler.createObserver(String.self)
+        sut.date.drive(dateObs).disposed(by: self.disposeBag)
+
+        scheduler.start()
+    }
+    
+    func streetAddress() {
+        guard let sut = self.viewModel else { return }
+        let dateObs = scheduler.createObserver(String.self)
+        sut.streetAddress.drive(dateObs).disposed(by: self.disposeBag)
+        scheduler.start()
     }
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testDriverHeetchRelay() {
+        guard let sut = self.viewModel else { return }
+        let driver = scheduler.createObserver(DriverHeetch?.self)
+        
+        sut.driverSelectedRelay.bind(to: driver).disposed(by: self.disposeBag)
+        scheduler.start()
+        XCTAssertRecordedElements(driver.events, [nil])
+    }
+        
+    func createDriver() -> DriverHeetch {
+        DriverHeetch(id: 1, firstname: "Pierre", lastname: "Lamage", image: "/image", coordinates: DriverHeetch.Coordinates(latitude: 42.0923, longitude: -2.2323))
     }
 
 }

@@ -42,12 +42,15 @@ final class FindMyDriverViewModel: FindMyDriverViewModelProtocol {
     var driverSelectedRelay = BehaviorRelay<DriverHeetch?>(value: nil)
     
     private let disposeBag = DisposeBag()
-    private let loadingRelay = BehaviorRelay<Bool>(value: false)
-    private let locationVerbose = BehaviorRelay<[String: String]?>(value: nil)
     private let timer = Observable<NSInteger>.interval(5, scheduler: ConcurrentDispatchQueueScheduler(qos: .background))
+    
+    private let loadingRelay = BehaviorRelay<Bool>(value: false)
     private let dateRefreshRelay = BehaviorRelay<Date>(value: Date())
-    private let manager = CLLocationManager()
+    private let locationVerbose = BehaviorRelay<[String: String]?>(value: nil)
     private let myLocationRelay = BehaviorRelay<CLLocation?>(value: nil)
+    
+    private let manager = CLLocationManager()
+    
     internal let api = API(scheme: "http", host: "hiring.heetch.com")
 
     init() {

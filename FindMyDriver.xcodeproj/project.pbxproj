@@ -20,6 +20,8 @@
 		096D7D5E24F2F2BE0096AFAE /* LocationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096D7D5D24F2F2BE0096AFAE /* LocationProtocol.swift */; };
 		096D7D6024F2F3500096AFAE /* ApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096D7D5F24F2F3500096AFAE /* ApiProtocol.swift */; };
 		09E753AD24F2F71B005B015C /* FindMyDriverViewModel+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E753AC24F2F71A005B015C /* FindMyDriverViewModel+Test.swift */; };
+		09E753B324F2F8D6005B015C /* ApiMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E753B224F2F8D6005B015C /* ApiMock.swift */; };
+		09E753B724F2FC38005B015C /* DriverHeetch+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E753B624F2FC38005B015C /* DriverHeetch+Test.swift */; };
 		2BDE08B62D160E412C07363C /* Pods_FindMyDriver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7744B9380578029B0052AB4 /* Pods_FindMyDriver.framework */; };
 		8720557B22A10CA6008700CC /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8720557A22A10CA6008700CC /* RoundedView.swift */; };
 		8752CE2722A010E800E7AE7C /* CascadeOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8752CE2622A010E800E7AE7C /* CascadeOperator.swift */; };
@@ -89,6 +91,8 @@
 		096D7D5D24F2F2BE0096AFAE /* LocationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationProtocol.swift; sourceTree = "<group>"; };
 		096D7D5F24F2F3500096AFAE /* ApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProtocol.swift; sourceTree = "<group>"; };
 		09E753AC24F2F71A005B015C /* FindMyDriverViewModel+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FindMyDriverViewModel+Test.swift"; sourceTree = "<group>"; };
+		09E753B224F2F8D6005B015C /* ApiMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiMock.swift; sourceTree = "<group>"; };
+		09E753B624F2FC38005B015C /* DriverHeetch+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DriverHeetch+Test.swift"; sourceTree = "<group>"; };
 		177AA681FC317E3E3E40FC2D /* Pods_FindMyDriver_FindMyDriverTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindMyDriver_FindMyDriverTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D39A226F3CC3ABDD4BF3E76 /* Pods-FindMyDriver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyDriver.debug.xcconfig"; path = "Target Support Files/Pods-FindMyDriver/Pods-FindMyDriver.debug.xcconfig"; sourceTree = "<group>"; };
 		8720557A22A10CA6008700CC /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
@@ -230,6 +234,22 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		09E753B124F2F8BF005B015C /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				09E753B224F2F8D6005B015C /* ApiMock.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		09E753B524F2FC22005B015C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				09E753B624F2FC38005B015C /* DriverHeetch+Test.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		6D45E2519382083172625C3E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -337,6 +357,8 @@
 		878845BE2268D3CA006B1253 /* FindMyDriverTests */ = {
 			isa = PBXGroup;
 			children = (
+				09E753B524F2FC22005B015C /* Model */,
+				09E753B124F2F8BF005B015C /* Api */,
 				09E753AB24F2F6AB005B015C /* ViewModel */,
 				878845C12268D3CA006B1253 /* Info.plist */,
 			);
@@ -601,6 +623,8 @@
 			files = (
 				09E753AD24F2F71B005B015C /* FindMyDriverViewModel+Test.swift in Sources */,
 				8752CE3D22A022E400E7AE7C /* Networking+Tests.swift in Sources */,
+				09E753B724F2FC38005B015C /* DriverHeetch+Test.swift in Sources */,
+				09E753B324F2F8D6005B015C /* ApiMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
