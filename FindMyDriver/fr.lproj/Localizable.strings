@@ -1,2 +1,5 @@
 "found-drivers.none.label" = "Aucun driver à suivre pour le moment. Tu peux en ajouter un avec le bouton menu ci-dessous 😉";
 "driver.address.unknown" = "Address inconue";
+"at_word" = "à";
+"find-my-driver" = "Trouver mon conducteur";
+"location-not-allowed" = "Nous avons besoin d'avoir accès à ta localisation pour te trouver nos meilleurs chauffeurs !";

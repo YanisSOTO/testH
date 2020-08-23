@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		096D7D2F24F01B360096AFAE /* FindMyDriverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096D7D2E24F01B360096AFAE /* FindMyDriverViewModel.swift */; };
+		096D7D3224F01DE50096AFAE /* MainNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096D7D3124F01DE50096AFAE /* MainNavigator.swift */; };
+		096D7D3424F01E860096AFAE /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096D7D3324F01E860096AFAE /* Navigator.swift */; };
+		096D7D3B24F024F80096AFAE /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096D7D3A24F024F80096AFAE /* Constant.swift */; };
+		096D7D4024F026750096AFAE /* DriverHeetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096D7D3F24F026750096AFAE /* DriverHeetch.swift */; };
+		096D7D4724F03B130096AFAE /* LoadingViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096D7D4624F03B130096AFAE /* LoadingViewState.swift */; };
+		096D7D5024F145FE0096AFAE /* PickablesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096D7D4F24F145FE0096AFAE /* PickablesListView.swift */; };
+		096D7D5224F14EA00096AFAE /* PickableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096D7D5124F14EA00096AFAE /* PickableView.swift */; };
+		096D7D5724F28CC20096AFAE /* DriverDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096D7D5624F28CC20096AFAE /* DriverDescriptionView.swift */; };
+		096D7D5924F2B3DE0096AFAE /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096D7D5824F2B3DE0096AFAE /* Extension.swift */; };
+		096D7D5E24F2F2BE0096AFAE /* LocationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096D7D5D24F2F2BE0096AFAE /* LocationProtocol.swift */; };
+		096D7D6024F2F3500096AFAE /* ApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096D7D5F24F2F3500096AFAE /* ApiProtocol.swift */; };
+		09E753AD24F2F71B005B015C /* FindMyDriverViewModel+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E753AC24F2F71A005B015C /* FindMyDriverViewModel+Test.swift */; };
 		2BDE08B62D160E412C07363C /* Pods_FindMyDriver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7744B9380578029B0052AB4 /* Pods_FindMyDriver.framework */; };
 		8720557B22A10CA6008700CC /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8720557A22A10CA6008700CC /* RoundedView.swift */; };
 		8752CE2722A010E800E7AE7C /* CascadeOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8752CE2622A010E800E7AE7C /* CascadeOperator.swift */; };
@@ -14,14 +27,10 @@
 		8752CE3322A01E5E00E7AE7C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8752CE3122A01E5E00E7AE7C /* Localizable.strings */; };
 		8752CE3622A01F0300E7AE7C /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8752CE3522A01F0300E7AE7C /* String+Localized.swift */; };
 		8752CE3D22A022E400E7AE7C /* Networking+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A58C0B2273347F005BA1BD /* Networking+Tests.swift */; };
-		8752CE4122A02B3300E7AE7C /* ItemPickerItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8752CE4022A02B3300E7AE7C /* ItemPickerItemView.swift */; };
-		8752CE4322A02C0900E7AE7C /* ItemPickerViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8752CE4222A02C0900E7AE7C /* ItemPickerViewController+Rx.swift */; };
 		875B192222A006940078E1B2 /* NoDriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875B192122A006940078E1B2 /* NoDriverViewController.swift */; };
-		875B192422A006AA0078E1B2 /* FoundDriverMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875B192322A006AA0078E1B2 /* FoundDriverMapViewController.swift */; };
-		875B192822A007F30078E1B2 /* DriverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875B192722A007F30078E1B2 /* DriverView.swift */; };
+		875B192422A006AA0078E1B2 /* MapKitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875B192322A006AA0078E1B2 /* MapKitController.swift */; };
 		875B192C22A00BED0078E1B2 /* Pickable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875B192B22A00BED0078E1B2 /* Pickable.swift */; };
 		875B192D22A00BED0078E1B2 /* ItemPickerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875B192922A00BEC0078E1B2 /* ItemPickerButton.swift */; };
-		875B192E22A00BED0078E1B2 /* ItemPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875B192A22A00BED0078E1B2 /* ItemPickerViewController.swift */; };
 		876D8995229C18A700C337A6 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876D8994229C18A700C337A6 /* Request.swift */; };
 		876D8997229C18BC00C337A6 /* Request+Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876D8996229C18BC00C337A6 /* Request+Input.swift */; };
 		876D8999229C18DF00C337A6 /* Request+Output.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876D8998229C18DE00C337A6 /* Request+Output.swift */; };
@@ -66,6 +75,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		096D7D2E24F01B360096AFAE /* FindMyDriverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyDriverViewModel.swift; sourceTree = "<group>"; };
+		096D7D3124F01DE50096AFAE /* MainNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigator.swift; sourceTree = "<group>"; };
+		096D7D3324F01E860096AFAE /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		096D7D3A24F024F80096AFAE /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		096D7D3F24F026750096AFAE /* DriverHeetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverHeetch.swift; sourceTree = "<group>"; };
+		096D7D4624F03B130096AFAE /* LoadingViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewState.swift; sourceTree = "<group>"; };
+		096D7D4F24F145FE0096AFAE /* PickablesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickablesListView.swift; sourceTree = "<group>"; };
+		096D7D5124F14EA00096AFAE /* PickableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickableView.swift; sourceTree = "<group>"; };
+		096D7D5624F28CC20096AFAE /* DriverDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverDescriptionView.swift; sourceTree = "<group>"; };
+		096D7D5824F2B3DE0096AFAE /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		096D7D5A24F2DF720096AFAE /* ParisGPX.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ParisGPX.gpx; sourceTree = "<group>"; };
+		096D7D5D24F2F2BE0096AFAE /* LocationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationProtocol.swift; sourceTree = "<group>"; };
+		096D7D5F24F2F3500096AFAE /* ApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProtocol.swift; sourceTree = "<group>"; };
+		09E753AC24F2F71A005B015C /* FindMyDriverViewModel+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FindMyDriverViewModel+Test.swift"; sourceTree = "<group>"; };
 		177AA681FC317E3E3E40FC2D /* Pods_FindMyDriver_FindMyDriverTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindMyDriver_FindMyDriverTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D39A226F3CC3ABDD4BF3E76 /* Pods-FindMyDriver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyDriver.debug.xcconfig"; path = "Target Support Files/Pods-FindMyDriver/Pods-FindMyDriver.debug.xcconfig"; sourceTree = "<group>"; };
 		8720557A22A10CA6008700CC /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
@@ -76,14 +99,10 @@
 		8752CE3222A01E5E00E7AE7C /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8752CE3422A01E6300E7AE7C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8752CE3522A01F0300E7AE7C /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
-		8752CE4022A02B3300E7AE7C /* ItemPickerItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPickerItemView.swift; sourceTree = "<group>"; };
-		8752CE4222A02C0900E7AE7C /* ItemPickerViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ItemPickerViewController+Rx.swift"; sourceTree = "<group>"; };
 		87568E122268E304001E3643 /* RadialMenu.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RadialMenu.xcodeproj; path = ../RadialMenu/RadialMenu.xcodeproj; sourceTree = "<group>"; };
 		875B192122A006940078E1B2 /* NoDriverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDriverViewController.swift; sourceTree = "<group>"; };
-		875B192322A006AA0078E1B2 /* FoundDriverMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundDriverMapViewController.swift; sourceTree = "<group>"; };
-		875B192722A007F30078E1B2 /* DriverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverView.swift; sourceTree = "<group>"; };
+		875B192322A006AA0078E1B2 /* MapKitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitController.swift; sourceTree = "<group>"; };
 		875B192922A00BEC0078E1B2 /* ItemPickerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPickerButton.swift; sourceTree = "<group>"; };
-		875B192A22A00BED0078E1B2 /* ItemPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPickerViewController.swift; sourceTree = "<group>"; };
 		875B192B22A00BED0078E1B2 /* Pickable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pickable.swift; sourceTree = "<group>"; };
 		876D8994229C18A700C337A6 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		876D8996229C18BC00C337A6 /* Request+Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Request+Input.swift"; sourceTree = "<group>"; };
@@ -124,6 +143,93 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		096D7D3024F01DCA0096AFAE /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				096D7D3124F01DE50096AFAE /* MainNavigator.swift */,
+				096D7D3324F01E860096AFAE /* Navigator.swift */,
+			);
+			path = Navigator;
+			sourceTree = "<group>";
+		};
+		096D7D3924F024E40096AFAE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				096D7D5824F2B3DE0096AFAE /* Extension.swift */,
+				096D7D5B24F2F2580096AFAE /* Protocols */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		096D7D3E24F026670096AFAE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				096D7D3F24F026750096AFAE /* DriverHeetch.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		096D7D4A24F122620096AFAE /* NoDriverView */ = {
+			isa = PBXGroup;
+			children = (
+				875B192122A006940078E1B2 /* NoDriverViewController.swift */,
+			);
+			path = NoDriverView;
+			sourceTree = "<group>";
+		};
+		096D7D4B24F122730096AFAE /* FoundDriver */ = {
+			isa = PBXGroup;
+			children = (
+				096D7D5524F28CA00096AFAE /* DriverInfoView */,
+				875B192322A006AA0078E1B2 /* MapKitController.swift */,
+			);
+			path = FoundDriver;
+			sourceTree = "<group>";
+		};
+		096D7D4E24F145E90096AFAE /* Pickable */ = {
+			isa = PBXGroup;
+			children = (
+				875B192B22A00BED0078E1B2 /* Pickable.swift */,
+				096D7D4F24F145FE0096AFAE /* PickablesListView.swift */,
+				096D7D5124F14EA00096AFAE /* PickableView.swift */,
+			);
+			path = Pickable;
+			sourceTree = "<group>";
+		};
+		096D7D5524F28CA00096AFAE /* DriverInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				096D7D5624F28CC20096AFAE /* DriverDescriptionView.swift */,
+			);
+			path = DriverInfoView;
+			sourceTree = "<group>";
+		};
+		096D7D5B24F2F2580096AFAE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				096D7D5D24F2F2BE0096AFAE /* LocationProtocol.swift */,
+				096D7D5F24F2F3500096AFAE /* ApiProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		09E753AA24F2F5BD005B015C /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				878845B12268D3CA006B1253 /* Assets.xcassets */,
+				878845B32268D3CA006B1253 /* LaunchScreen.storyboard */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		09E753AB24F2F6AB005B015C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				09E753AC24F2F71A005B015C /* FindMyDriverViewModel+Test.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		6D45E2519382083172625C3E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,9 +244,9 @@
 			isa = PBXGroup;
 			children = (
 				878845AC2268D3C9006B1253 /* FindMyDriverViewController.swift */,
-				875B192122A006940078E1B2 /* NoDriverViewController.swift */,
-				875B192322A006AA0078E1B2 /* FoundDriverMapViewController.swift */,
-				875B192722A007F30078E1B2 /* DriverView.swift */,
+				096D7D2E24F01B360096AFAE /* FindMyDriverViewModel.swift */,
+				096D7D4B24F122730096AFAE /* FoundDriver */,
+				096D7D4A24F122620096AFAE /* NoDriverView */,
 			);
 			path = FindMyDriver;
 			sourceTree = "<group>";
@@ -148,11 +254,8 @@
 		8752CE2322A00FD200E7AE7C /* ItemPicker */ = {
 			isa = PBXGroup;
 			children = (
+				096D7D4E24F145E90096AFAE /* Pickable */,
 				875B192922A00BEC0078E1B2 /* ItemPickerButton.swift */,
-				875B192A22A00BED0078E1B2 /* ItemPickerViewController.swift */,
-				8752CE4222A02C0900E7AE7C /* ItemPickerViewController+Rx.swift */,
-				8752CE4022A02B3300E7AE7C /* ItemPickerItemView.swift */,
-				875B192B22A00BED0078E1B2 /* Pickable.swift */,
 			);
 			path = ItemPicker;
 			sourceTree = "<group>";
@@ -160,6 +263,9 @@
 		8752CE2522A010C400E7AE7C /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				096D7D3A24F024F80096AFAE /* Constant.swift */,
+				096D7D4624F03B130096AFAE /* LoadingViewState.swift */,
+				096D7D5A24F2DF720096AFAE /* ParisGPX.gpx */,
 				8752CE2622A010E800E7AE7C /* CascadeOperator.swift */,
 				8752CE2822A0116A00E7AE7C /* AddSubview+SnapKit.swift */,
 				8752CE3522A01F0300E7AE7C /* String+Localized.swift */,
@@ -213,13 +319,15 @@
 		878845A92268D3C9006B1253 /* FindMyDriver */ = {
 			isa = PBXGroup;
 			children = (
+				09E753AA24F2F5BD005B015C /* Design */,
+				876D8992229C189400C337A6 /* Networking */,
+				096D7D3E24F026670096AFAE /* Model */,
+				096D7D3924F024E40096AFAE /* Utils */,
 				878845AA2268D3C9006B1253 /* AppDelegate.swift */,
+				096D7D3024F01DCA0096AFAE /* Navigator */,
 				8752CE2222A00FBE00E7AE7C /* FindMyDriver */,
 				8752CE2322A00FD200E7AE7C /* ItemPicker */,
-				876D8992229C189400C337A6 /* Networking */,
 				8752CE2522A010C400E7AE7C /* Helpers */,
-				878845B12268D3CA006B1253 /* Assets.xcassets */,
-				878845B32268D3CA006B1253 /* LaunchScreen.storyboard */,
 				8752CE3122A01E5E00E7AE7C /* Localizable.strings */,
 				878845B62268D3CA006B1253 /* Info.plist */,
 			);
@@ -229,6 +337,7 @@
 		878845BE2268D3CA006B1253 /* FindMyDriverTests */ = {
 			isa = PBXGroup;
 			children = (
+				09E753AB24F2F6AB005B015C /* ViewModel */,
 				878845C12268D3CA006B1253 /* Info.plist */,
 			);
 			path = FindMyDriverTests;
@@ -457,24 +566,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				8752CE2722A010E800E7AE7C /* CascadeOperator.swift in Sources */,
+				096D7D5724F28CC20096AFAE /* DriverDescriptionView.swift in Sources */,
 				876D8999229C18DF00C337A6 /* Request+Output.swift in Sources */,
+				096D7D4024F026750096AFAE /* DriverHeetch.swift in Sources */,
 				876D8997229C18BC00C337A6 /* Request+Input.swift in Sources */,
+				096D7D5024F145FE0096AFAE /* PickablesListView.swift in Sources */,
 				875B192C22A00BED0078E1B2 /* Pickable.swift in Sources */,
 				8752CE2922A0116A00E7AE7C /* AddSubview+SnapKit.swift in Sources */,
-				875B192E22A00BED0078E1B2 /* ItemPickerViewController.swift in Sources */,
+				096D7D3424F01E860096AFAE /* Navigator.swift in Sources */,
+				096D7D5224F14EA00096AFAE /* PickableView.swift in Sources */,
 				8720557B22A10CA6008700CC /* RoundedView.swift in Sources */,
+				096D7D5924F2B3DE0096AFAE /* Extension.swift in Sources */,
+				096D7D5E24F2F2BE0096AFAE /* LocationProtocol.swift in Sources */,
+				096D7D3224F01DE50096AFAE /* MainNavigator.swift in Sources */,
 				876D8995229C18A700C337A6 /* Request.swift in Sources */,
-				875B192822A007F30078E1B2 /* DriverView.swift in Sources */,
-				8752CE4322A02C0900E7AE7C /* ItemPickerViewController+Rx.swift in Sources */,
+				096D7D3B24F024F80096AFAE /* Constant.swift in Sources */,
+				096D7D2F24F01B360096AFAE /* FindMyDriverViewModel.swift in Sources */,
 				87A58C0A22733236005BA1BD /* API.swift in Sources */,
 				878845AD2268D3C9006B1253 /* FindMyDriverViewController.swift in Sources */,
 				878845AB2268D3C9006B1253 /* AppDelegate.swift in Sources */,
 				876D899B229C18FF00C337A6 /* Method.swift in Sources */,
 				875B192222A006940078E1B2 /* NoDriverViewController.swift in Sources */,
+				096D7D6024F2F3500096AFAE /* ApiProtocol.swift in Sources */,
 				8752CE3622A01F0300E7AE7C /* String+Localized.swift in Sources */,
-				875B192422A006AA0078E1B2 /* FoundDriverMapViewController.swift in Sources */,
-				8752CE4122A02B3300E7AE7C /* ItemPickerItemView.swift in Sources */,
+				875B192422A006AA0078E1B2 /* MapKitController.swift in Sources */,
 				875B192D22A00BED0078E1B2 /* ItemPickerButton.swift in Sources */,
+				096D7D4724F03B130096AFAE /* LoadingViewState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +599,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09E753AD24F2F71B005B015C /* FindMyDriverViewModel+Test.swift in Sources */,
 				8752CE3D22A022E400E7AE7C /* Networking+Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

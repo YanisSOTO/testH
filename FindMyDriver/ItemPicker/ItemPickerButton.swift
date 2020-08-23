@@ -3,7 +3,6 @@ import UIKit
 public final class ItemPickerButton: UIControl {
 
     // MARK: - Setup
-
     public override init(frame: CGRect) {
         super.init(frame: frame)
         setUp()
